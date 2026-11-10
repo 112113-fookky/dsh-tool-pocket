@@ -17,7 +17,7 @@ A browser-automation plugin can ship 30+ tools and ~29 KB of JSON schema. That i
 From the DSH plugin market (once listed) or:
 
 ```sh
-dsh plugin add github:<owner>/dsh-tool-pocket
+dsh plugin add github:112113-fookky/dsh-tool-pocket
 ```
 
 No build step is required: the package is plain ESM plus a handwritten client bundle.
