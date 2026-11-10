@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Tool pocket",
+    "description": "Keeps a token-heavy tool group out of the prompt; one call unlocks it for the turn."
+  }
+}

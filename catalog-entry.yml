@@ -1,0 +1,11 @@
+# Copy this file to awesome-dsh-plugin/data/plugins/<112113-fookky>__dsh-tool-pocket.yml
+url: https://github.com/112113-fookky/dsh-tool-pocket
+name: 112113-fookky/dsh-tool-pocket
+category: tools
+description:
+  en: Keeps a token-heavy tool group installed but out of the model's tool schema until a turn needs it.
+  zh: 把吃 token 的一整组工具常驻安装、默认锁在口袋里，需要时一次放行，回合结束自动收回。
+# Optional, only if you publish a GitHub Release tarball:
+# tarball: https://github.com/112113-fookky/dsh-tool-pocket/releases/latest/download/dsh-tool-pocket.tgz
+# Optional storefront icon (GitHub-hosted raster PNG/JPG/WebP, not SVG):
+# icon: https://raw.githubusercontent.com/112113-fookky/dsh-tool-pocket/main/icon.png

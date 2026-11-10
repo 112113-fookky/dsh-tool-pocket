@@ -1,0 +1,49 @@
+{
+  "name": "dsh-tool-pocket",
+  "version": "0.8.0",
+  "type": "module",
+  "description": "Keeps a token-heavy tool group installed but out of the model's tool schema until a turn needs it.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "tokens",
+    "tool-schema",
+    "browser"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/112113-fookky/dsh-tool-pocket"
+  },
+  "bugs": {
+    "url": "https://github.com/112113-fookky/dsh-tool-pocket/issues"
+  },
+  "homepage": "https://github.com/112113-fookky/dsh-tool-pocket#readme",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

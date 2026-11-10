@@ -1,0 +1,37 @@
+# Tool Pocket bundle layer: mount the pocket gate.
+# The gate keeps tool names matching `prefixes` out of the model-facing schema
+# and exposes one small meta tool that unlocks them for the next step.
+# hold: true makes every unlock last until the model calls { lock: true }
+# instead of relocking when the turn ends (off by default).
+# autoOpen: a real user message that mentions one of `openWords` opens the
+# group before the tools resolve for that turn; `closeWords` wins.
+- insert:
+    - id: tool-pocket
+      name: dsh-tool-pocket
+      config:
+        prefixes:
+          - ego_
+        metaTool: browser_tools
+        hint: 浏览器：打开网页、点击、填表、截图、读页面、抓接口、登录后页面、下载。
+        turnEnd: true
+        hold: false
+        autoOpen: true
+        openWords:
+          - 网页
+          - 浏览器
+          - 打开链接
+          - 打开网站
+          - 截图
+          - 表单
+          - 登录后
+          - 抓接口
+          - 抓包
+          - 下载文件
+          - 页面
+        closeWords:
+          - 收起工具
+          - 收起来
+          - 关掉工具
+          - 锁上工具
+          - 收起口袋
+          - 关掉口袋
